@@ -26,6 +26,7 @@ function setup() {
 	bob3 = new Bob(350, 500, 100);
 	bob4 = new Bob(450, 500, 100);
 	bob5 = new Bob(550, 500, 100);
+	
 
 	rope1 = new Rope(bob1.body, roof.body, -200, 0)
 	rope2 = new Rope(bob2.body, roof.body, -100, 0)
@@ -70,8 +71,7 @@ rope5.display()
 function keyPressed(){
 	if(keyCode === UP_ARROW){
 		Matter.Body.applyForce(
-			bob1.body, bob1.body.position, {x : -150, y : -150}
+			bob1.body, bob1.body.position, {x : -500, y :-500}
 		)
 	}
 }
-
